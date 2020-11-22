@@ -1,0 +1,102 @@
+$color-background: aquamarine;
+$color-border: blue;
+$color-titulo: black;
+$color-border2: white;
+
+
+body{
+	background-color: $color-titulo;
+	color: $color-border2;
+}
+#menu{
+	background-image:linear-gradient(to left, $color-titulo,$color-border);
+	width: 100%;
+	height: 40px;
+    border: outset 1px $color-border2;
+    ul{
+        list-style: none;
+        li{
+            width: 80px;
+            height: 30px;
+            display:inline-block;
+            border: solid 1px $color-border2;
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px;
+            background: $color-titulo;
+            text-decoration: none;
+            text-align: center;
+    }
+    
+    }
+        
+    }
+
+.titulo{
+	font-family: verdana;
+	font-style: italic;
+	color: $color-titulo;
+}
+p{
+	font-family: 'Bebas Neue';
+}
+#menu__lista{
+	list-style: none;
+	display: flex;
+	flex-flow: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    :hover{
+        transition: all 1s;
+        background-color: $color-background;
+        text-decoration: none;
+    }
+
+}
+.imagen{
+	border: double 2px $color-border2;
+}
+.contenedor{
+	background-image:linear-gradient(to left, $color-titulo, $color-border);
+	width: 100%;
+	padding: 5px;
+	display: inline-flex;
+	flex-direction: row;
+    justify-content: space-around;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+        }
+    }
+}
+.texto{
+    color: $color-background;
+    :hover{
+        background-color: $color-border;
+        border: solid 2px $color-border2;
+        border-radius: 5px;
+    }
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: space-around;
+}
+article{
+    padding: 8px ;
+    border: solid 4px $color-border;
+	border-radius: 8px;
+}
+aside{
+    padding: 8px;
+    border: solid 4px $color-border;
+	border-radius: 8px;
+}
+.logo:hover{
+	transform: rotate(45deg);
+}
+.fotos{
+    border: $color-titulo;
+    border-radius: 9px;
+}
