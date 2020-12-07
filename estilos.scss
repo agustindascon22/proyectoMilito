@@ -5,7 +5,7 @@ $color-border2: white;
 
 
 body{
-	background-color: $color-titulo;
+	background-color: $color-background;
 	color: $color-border2;
 }
 .imagen{
@@ -17,17 +17,6 @@ body{
     box-shadow: 10px 10px 5px black;
 }
 
-.titulo{
-    font-size: 22px;
-    font-family: verdana;
-	font-style: italic;
-	color: $color-titulo;
-}
-p{
-    margin: 15px;
-    font-size: 20px;
-    font-family: 'Bebas Neue';
-}
 
 .contenedor{
 	background-image:linear-gradient(to left, $color-titulo, $color-border);
@@ -43,6 +32,15 @@ p{
         }
     }
 }
+#tabla{
+    width: 100%;
+    margin-bottom: 10px;
+}
+th{
+    height: 40px;
+    background: royalblue;
+    color: $color-border2;
+}
 .texto{
     color: $color-background;
     :hover{
@@ -54,6 +52,36 @@ p{
 .cuerpo{
     background-color: $color-background;
 }
+h1{
+    font-size: 22px;
+    font-family: 'Goldman', cursive;
+    color: $color-titulo;
+    margin: 30px;
+}
+p{
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Goldman', cursive;
+}
+h3{
+    font-size: 22px;
+    font-family: 'Goldman', cursive;
+    color: $color-titulo;
+}
 .logo:hover{
 	transform: rotate(45deg);
+}
+form{
+    margin: 30px;
+}
+.videos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    .cuadros{
+        padding: 10px;
+        margin: 20px;
+        
+    }
 }

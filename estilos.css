@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: aquamarine;
   color: white;
 }
 
@@ -11,19 +11,6 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 10px 10px 5px black;
           box-shadow: 10px 10px 5px black;
-}
-
-.titulo {
-  font-size: 22px;
-  font-family: verdana;
-  font-style: italic;
-  color: black;
-}
-
-p {
-  margin: 15px;
-  font-size: 20px;
-  font-family: 'Bebas Neue';
 }
 
 .contenedor {
@@ -50,6 +37,17 @@ p {
   display: inline-block;
 }
 
+#tabla {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+th {
+  height: 40px;
+  background: royalblue;
+  color: white;
+}
+
 .texto {
   color: aquamarine;
 }
@@ -64,8 +62,51 @@ p {
   background-color: aquamarine;
 }
 
+h1 {
+  font-size: 22px;
+  font-family: 'Goldman', cursive;
+  color: black;
+  margin: 30px;
+}
+
+p {
+  margin: 15px;
+  font-size: 20px;
+  font-family: 'Goldman', cursive;
+}
+
+h3 {
+  font-size: 22px;
+  font-family: 'Goldman', cursive;
+  color: black;
+}
+
 .logo:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+form {
+  margin: 30px;
+}
+
+.videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.videos .cuadros {
+  padding: 10px;
+  margin: 20px;
 }
 /*# sourceMappingURL=estilos.css.map */
